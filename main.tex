@@ -113,17 +113,17 @@ Furthermore, let $\cN^\theta$ to denote the moduli space of quiver representatio
 Note that $\cN^\theta$ is isomorphic to the minimal resolution $Y$.
 We construct morphisms $f \colon \cN^\theta \rightarrow \cM^\theta$ and $g \colon \cM^\theta \rightarrow \cN^\theta$ and show that they are mutual inverses.
 
-\section{The morphism $f \colon \cN^\theta \rightarrow \cM$}
+\subsection{The morphism $f \colon \cN^\theta \rightarrow \cM$}
 
 Take a family of quiver representations $\cN^\theta(S)$ over a test scheme $S$.
 Abusing notation, this gives vector bundles $T_0, \ldots, T_4$ over $S$ of the correct rank, as well as sections corresponding to the paths in the quiver.
 We give the morphism $f$ by defining fields over $S$ of our GIT problem from this data.
 
-\subsection{The field \bfx}
+\subsubsection{The field \bfx}
 
 The arrow from vertex $0$ to vertex $4$ gives us a tautological section $T_0 \rightarrow T_4$ we take that to be the $\bfx$ of (\ref{fd:x}).
 
-\subsection{The fields $\alpha, \beta, \gamma$}
+\subsubsection{The fields $\alpha, \beta, \gamma$}
 
 Since our family is $\theta$-stable the universal section $T_4 \rightarrow T_1$ corresponding to the arrow $4 \rightarrow 1$ is surjective; its kernel is the line bundle $T_1^\vee \otimes L_4$.
 The relations of the McKay quiver imply that the section corresponding to the path $1 \rightarrow 4 \rightarrow 1$ is zero and hence that the following is a complex of universal sections:
@@ -131,7 +131,7 @@ $$T_1 \rightarrow T_4 \rightarrow T_1 \rightarrow 0.$$
 This gives us a section $T_1 \rightarrow T_1^\vee \otimes L_4$, in other words a morphism $T_1 \otimes T_1 \rightarrow L_4$ that we set to be $\alpha$ of (\ref{fd:alpha}).
 We can pick the sections $\beta$ and $\gamma$ of (\ref{fd:beta}) and (\ref{fd:gamma}) in a similar fashion.
 
-\subsection{The fields $P, Q, R$}
+\subsubsection{The fields $P, Q, R$}
 
 The construction of $P,Q$ and $R$ is more delicate.
 The representations \underline{Hom}$(\rho_0, \rho_4)$ and \underline{Hom}$(\rho_4, \rho_1)$ are isomorphic.
@@ -141,7 +141,7 @@ Now consider the composite $$T_0 \otimes_\bfk \Hom(P_0, P_4) \rightarrow T_0 \ot
 The stability condition $\theta$ implies $\text{ev} \colon T_0 \otimes_\bfk \Hom(P_0, P_4) \rightarrow T_4$ is surjective; checking that the kernel of ev is zero under the composite above gives us a morphism $T_4 \rightarrow T_4^\vee \otimes T_1$ that we will call $P$. 
 The fields $Q$ and $R$ are constructed similarly.
 
-\subsection{The constraints and the field $\delta$}
+\subsubsection{The constraints and the field $\delta$}
 
 The space $\cM^\theta$ is birational to $\bX$ were the constraints hold: they hold on $\bX$ since the corresponding statements are true for representations of $\bB D_4$.
 
@@ -150,28 +150,28 @@ Similar statements hold for $R^\dagger P^\dagger$ and $P^\dagger Q^\dagger$.
 Stability of our family implies that $(\alpha, \beta, \gamma) \neq 0$, we may therefore read off the field $\delta$ from Equations~(\ref{con:qr}), (\ref{con:rp}), (\ref{con:pq}). 
 This can probably be said in a clearer fashion using complexes and quasi-isomorphisms but it will do for now.
 
-\section{The morphism $g \colon \cM \rightarrow \cN$}
+\subsection{The morphism $g \colon \cM \rightarrow \cN$}
 
 Given an $S$-point of $\cM$, we give the morphism $g$ by defining a family of quiver representations of $Q$ over $S$ and checking that the relations are satisfied.
 As before, an $S$-point of $\cM$ naturally gives vector bundles $T_0, \ldots, T_4$ over $S$ of the correct ranks.
 It remains to define the sections corresponding to the arrows.
 
-\subsection{The arrow $0 \rightarrow 4$}
+\subsubsection{The arrow $0 \rightarrow 4$}
 
 For this we take the field $\bfx$.
 
-\subsection{The arrow $4 \rightarrow 0$}
+\subsubsection{The arrow $4 \rightarrow 0$}
 This is given by the composite
 $$T_4 \xrightarrow{\text{id}\otimes u} T_4 \otimes T_4 \rightarrow L_4 \xrightarrow{\alpha\beta\gamma\delta^2} T_0.$$
 
-\subsection{The other arrows $4 \rightarrow i$}
+\subsubsection{The other arrows $4 \rightarrow i$}
 We construct this section for $i=1$, the others are similar.
 The section corresponding to $1 \rightarrow 4$ is the following composite $$T_4 \xrightarrow{\text{id}\otimes u} T_4 \otimes T_4 \rightarrow S^2(T_4) \xrightarrow{P} T_1.$$
 
-\subsection{The other arrows $i \rightarrow 4$}
+\subsubsection{The other arrows $i \rightarrow 4$}
 Tensoring this section $T_4 \rightarrow T_1$ by $\alpha$ we get $T_4 \rightarrow T_1^\vee \otimes L_4$ this naturally gives a section $T_1 \rightarrow T_4^\vee \otimes L_4$, composing with $I^\dagger$ gives the desired section.
 
-\subsection{The relations}
+\subsubsection{The relations}
 
 The above gives us a homomorphism of algebras \begin{equation} \label{eq:kq1}
     \bfk Q \rightarrow \End_{\cM}(\oplus T_i).
@@ -183,7 +183,7 @@ The composite of the morphisms in (\ref{eq:kq1}) and (\ref{eq:kq2}) is a surject
 Putting these facts together we may conclude that $\End_{\cM}(\oplus T_i) \simeq A$.
 That is, our homomorphism $\bfk Q \rightarrow \End_{\cM}(\oplus T_i)$ factors through $A$ and that our fields give sections that satisfy the relations of the quiver.
 
-\section{The composite $g \circ f \colon \cN^\theta \rightarrow \cM \rightarrow \cN$ is the open inclusion $\cN^\theta \subset \cN$}
+\subsection{The composite $g \circ f \colon \cN^\theta \rightarrow \cM \rightarrow \cN$ is the open inclusion $\cN^\theta \subset \cN$}
 
 It suffices to check this on the sections corresponding to each arrow.
 
@@ -203,7 +203,7 @@ We then have the following commutative diagram:
 Note that the field $P$ in the image is defined using the bottom half of the diagram.
 The diagram combined with the fact that $P \colon \Hom(P_0, P_4) \rightarrow \Hom(P_4, P_1)$ takes $0 \rightarrow 4$ to $4 \rightarrow 1$ gives us that the section corresponding to $i \rightarrow 4$ gets mapped to itself under $g \circ f$.
 
-\subsection{The arrows $i \rightarrow 4$}
+\subsubsection{The arrows $i \rightarrow 4$}
 
 For $i =1$, we may naturally rewrite the section corresponding the arrow $4 \rightarrow 1$ as a morphism $T_1^\vee \otimes L_4 \rightarrow T_4$ and fits into the short exact sequence in the diagram below:
 \begin{equation}
@@ -214,7 +214,7 @@ Now since the field $\alpha$ in the image is given by the non-trivial vertical a
 The cases $i=2,3$ are similar.
 The case $i=0$ follows from the relations of the quiver.
 
-\section{Stability and conclusion}
+\subsection{Stability and conclusion}
 
 We begin with the morphism $f$.
 The $\theta$-stability of a family of points of $\cN$ gives non-vanishing sections of the bundles $T_1, \ldots, T_3$ and a surjective morphism $T_0^{\oplus 2} \rightarrow T_4$.
