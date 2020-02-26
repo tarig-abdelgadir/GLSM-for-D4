@@ -24,7 +24,7 @@
 
 \maketitle
 
-\section{ICTP: January 2020}
+\begin{center} {\em This is based on Ed's visit to the ICTP in January of 2020.} \end{center}
 
 The orbifold corresponding to the Dynkin diagram $D_4$ is given by the group 
 \[
@@ -32,7 +32,6 @@ The orbifold corresponding to the Dynkin diagram $D_4$ is given by the group
 \]
 acting on $\mathbb{A}^2$.
 The group $\bB D_4$ has five irreducible representations $\rho_0, \ldots, \rho_4$ whose ranks are $1,1,1,1,2$, respectively. The representation $\rho_0$ is the trivial representation.
-%We fix a fibre functor $\Rep(BD_4) \rightarrow \textbf{Vect}$.
 Below we express a GIT problem for which the stable quotient stack is $\bX:= [\bA^2/ \bB D_4]$ for one stability parameter and the minimal resolution $Y$ of the associated singularity for another.
 
 We begin by setting up some notation.
@@ -41,6 +40,8 @@ We take $P_0, \ldots, P_4$ to be the projective left-modules of $A$ correspondin
 Let $T_0, \ldots, T_4$ be vector spaces of dimensions $1,1,1,1,2$, respectively, and $G:= \text{GL}(\oplus T_i)$.
 Fix an isomorphism $\bfk \simeq T_0$ once and for all; we will use this tacitly, replacing $T_0$ by $\bfk$ at times.
 We write $L_4:= \det T_4$ and use $I^\dagger$ for the natural isomorphism $I^\dagger \colon T_4^\vee \otimes L_4 \rightarrow T_4$.
+
+\section{The fields and constraints}
 
 The GIT problem is given by the action of $G$ on the fields given below up to some constraints.
 The fields are:
@@ -77,7 +78,7 @@ We note that some of the constraints here are superfluous, like the determinant 
 
 Fields satisfying the constraints gauged by $G$ above give us a quotient stack $\cM$.
 
-\subsection{Tannakian duality}
+\section{Tannakian duality}
 
 Formally inverting the fields $\alpha, \ldots, R$ in (\ref{fd:alpha})-(\ref{fd:R}) gives a quotient stack $\widetilde{\cM}$ with an open embedding $\widetilde{\cM} \hookrightarrow \cM$.
 
@@ -86,7 +87,7 @@ The stack $\widetilde{\cM}$ is isomorphic to $\bX$.
 \end{proposition}
 
 \begin{proof}
-To simplify notation we pick bases of $T_0, \ldots, T_4$ and let $G$ act by change of basis. 
+To simplify notation we pick bases of $T_0, \ldots, T_4$, think of the fields as matrices and let $G$ act by change of basis. 
 One may gauge the scalar fields $\alpha, \ldots, \delta$ to $1$.
 The subgroup of $G$ fixing the scalar fields at $1$ is $$\{(1,\lambda_1, \ldots, \lambda_4) \in G \,|\, \lambda_1^2=1, \lambda_2^2=1, \lambda_3 = \lambda_1\lambda_2, \det\lambda_4=1\} \subset G.$$
 
@@ -97,7 +98,7 @@ A careful calculation of how the scalars in $G$ interact with $\bB D_4 \subset \
 \end{proof}
 
 \begin{corollary}
-Take $\phi$ to be the character of $G$ given by the weights $(5, -1,\ldots, -1)$ then $\cM^\phi \simeq \bX$
+Take $\phi$ to be the character of $G$ with the weights $(5, -1,\ldots, -1)$ then $\cM^\phi \simeq \bX$
 \end{corollary}
 
 \begin{proof}
@@ -105,73 +106,73 @@ The determinant of any semi-invariants with weight $n \phi$, with $n>0$, must co
 Therefore $\alpha \beta \gamma \delta \neq 0$ for any $\phi$-stable point of $\cM$ which implies that $\alpha, \ldots, R$ are invertible.  
 \end{proof}
 
-\subsection{The minimal resolution}
+\section{The minimal resolution}
 
-Let $\theta$ denote the character of $G$ with weights $-5,1,\ldots,1$ and $\cM^\theta$ denote the corresponding GIT quotient.
-We will also use $\cN^\theta$ to denote the moduli space of quiver representations of the McKay quiver with stability parameter $\theta$.
-Note that $\cN^\theta$ is isomorphic to $Y$.
+Let $\theta$ denote the character of $G$ with weights $(-5,1,\ldots,1)$ and $\cM^\theta$ denote the corresponding GIT quotient.
+Furthermore, let $\cN^\theta$ to denote the moduli space of quiver representations of the McKay quiver with stability parameter $\theta$.
+Note that $\cN^\theta$ is isomorphic to the minimal resolution $Y$.
 We construct morphisms $f \colon \cN^\theta \rightarrow \cM^\theta$ and $g \colon \cM^\theta \rightarrow \cN^\theta$ and show that they are mutual inverses.
 
-\subsection{The morphism $f \colon \cN^\theta \rightarrow \cM$}
+\section{The morphism $f \colon \cN^\theta \rightarrow \cM$}
 
-%We start with the easier of the two.
 Take a family of quiver representations $\cN^\theta(S)$ over a test scheme $S$.
 Abusing notation, this gives vector bundles $T_0, \ldots, T_4$ over $S$ of the correct rank, as well as sections corresponding to the paths in the quiver.
+We give the morphism $f$ by defining fields over $S$ of our GIT problem from this data.
 
-\subsubsection{The field \bfx}
+\subsection{The field \bfx}
 
-The arrow from vertex $0$ to vertex $4$ gives us a tautological section $T_0 \rightarrow T_4$ we take that to be the $\bfx$ of Equation~(\ref{fd:x}).
+The arrow from vertex $0$ to vertex $4$ gives us a tautological section $T_0 \rightarrow T_4$ we take that to be the $\bfx$ of (\ref{fd:x}).
 
-\subsubsection{The fields $\alpha, \beta, \gamma$}
+\subsection{The fields $\alpha, \beta, \gamma$}
 
 Since our family is $\theta$-stable the universal section $T_4 \rightarrow T_1$ corresponding to the arrow $4 \rightarrow 1$ is surjective; its kernel is the line bundle $T_1^\vee \otimes L_4$.
 The relations of the McKay quiver imply that the section corresponding to the path $1 \rightarrow 4 \rightarrow 1$ is zero and hence that the following is a complex of universal sections:
 $$T_1 \rightarrow T_4 \rightarrow T_1 \rightarrow 0.$$
-This gives us a section $T_1 \rightarrow T_1^\vee \otimes L_4$, in other words a morphism $T_1 \otimes T_1 \rightarrow L_4$ that we set to be $\alpha$ of Equation~(\ref{fd:alpha}).
-We can pick the sections $\beta$ and $\gamma$ of Equations~\ref{fd:beta} and \ref{fd:gamma} in a similar fashion.
+This gives us a section $T_1 \rightarrow T_1^\vee \otimes L_4$, in other words a morphism $T_1 \otimes T_1 \rightarrow L_4$ that we set to be $\alpha$ of (\ref{fd:alpha}).
+We can pick the sections $\beta$ and $\gamma$ of (\ref{fd:beta}) and (\ref{fd:gamma}) in a similar fashion.
 
-\subsubsection{The fields $P, Q, R$}
+\subsection{The fields $P, Q, R$}
 
 The construction of $P,Q$ and $R$ is more delicate.
 The representations \underline{Hom}$(\rho_0, \rho_4)$ and \underline{Hom}$(\rho_4, \rho_1)$ are isomorphic.
 This, in turn, gives us an isomorphism of corresponding projective modules of our quiver and further an isomorphism of vector spaces $\Hom(P_0, P_4) \simeq \Hom(P_4, P_1)$.
+We may scale this isomorphism so that it takes the arrow $0 \rightarrow 4$ to the arrow $4 \rightarrow 1$.
 Now consider the composite $$T_0 \otimes_\bfk \Hom(P_0, P_4) \rightarrow T_0 \otimes_\bfk \Hom(P_4, P_1) \rightarrow T_4^\vee \otimes T_1$$ where the second factor is the evaluation map.
 The stability condition $\theta$ implies $\text{ev} \colon T_0 \otimes_\bfk \Hom(P_0, P_4) \rightarrow T_4$ is surjective; checking that the kernel of ev is zero under the composite above gives us a morphism $T_4 \rightarrow T_4^\vee \otimes T_1$ that we will call $P$. 
 The fields $Q$ and $R$ are constructed similarly.
 
-\subsubsection{The constraints and the field $\delta$}
+\subsection{The constraints and the field $\delta$}
 
-The space $\cM^\theta$ is birational to $\bX$ were the constraints hold; they hold on $\bX$ since the corresponding statements are true for representations of $\bB D_4$.
+The space $\cM^\theta$ is birational to $\bX$ were the constraints hold: they hold on $\bX$ since the corresponding statements are true for representations of $\bB D_4$.
 
 We therefore have, cf.\ (\ref{con:qr}), that the section $Q^\dagger R^\dagger$ differs from $P^\dagger$ by a constant on all of $\cN^\theta$ while $P^\dagger$ is nonzero.
 Similar statements hold for $R^\dagger P^\dagger$ and $P^\dagger Q^\dagger$.
 Stability of our family implies that $(\alpha, \beta, \gamma) \neq 0$, we may therefore read off the field $\delta$ from Equations~(\ref{con:qr}), (\ref{con:rp}), (\ref{con:pq}). 
-This can probably be in a clearer fashion using complexes and quasi-isomorphisms but this will do for now.
+This can probably be said in a clearer fashion using complexes and quasi-isomorphisms but it will do for now.
 
+\section{The morphism $g \colon \cM \rightarrow \cN$}
 
+Given an $S$-point of $\cM$, we give the morphism $g$ by defining a family of quiver representations of $Q$ over $S$ and checking that the relations are satisfied.
+As before, an $S$-point of $\cM$ naturally gives vector bundles $T_0, \ldots, T_4$ over $S$ of the correct ranks.
+It remains to define the sections corresponding to the arrows.
 
-\subsection{The morphism $g \colon \cM \rightarrow \cN$}
+\subsection{The arrow $0 \rightarrow 4$}
 
-It suffices to define the sections corresponding to the arrows of the quiver and check that the relations are satisfied.
+For this we take the field $\bfx$.
 
-\subsubsection{The arrow $0 \rightarrow 4$}
-
-For this we take the section $\bfx$.
-
-\subsubsection{The arrow $4 \rightarrow 0$}
+\subsection{The arrow $4 \rightarrow 0$}
 This is given by the composite
 $$T_4 \xrightarrow{\text{id}\otimes u} T_4 \otimes T_4 \rightarrow L_4 \xrightarrow{\alpha\beta\gamma\delta^2} T_0.$$
 
-\subsubsection{The other arrows $4 \rightarrow i$}
+\subsection{The other arrows $4 \rightarrow i$}
 We construct this section for $i=1$, the others are similar.
 The section corresponding to $1 \rightarrow 4$ is the following composite $$T_4 \xrightarrow{\text{id}\otimes u} T_4 \otimes T_4 \rightarrow S^2(T_4) \xrightarrow{P} T_1.$$
 
-\subsubsection{The other arrows $i \rightarrow 4$}
+\subsection{The other arrows $i \rightarrow 4$}
 Tensoring this section $T_4 \rightarrow T_1$ by $\alpha$ we get $T_4 \rightarrow T_1^\vee \otimes L_4$ this naturally gives a section $T_1 \rightarrow T_4^\vee \otimes L_4$, composing with $I^\dagger$ gives the desired section.
 
-\subsubsection{The relations}
+\subsection{The relations}
 
-%The algebra $A$ is isomorphic to $\End_{\bX}(\oplus T_i)$.
 The above gives us a homomorphism of algebras \begin{equation} \label{eq:kq1}
     \bfk Q \rightarrow \End_{\cM}(\oplus T_i).
 \end{equation}
@@ -182,30 +183,7 @@ The composite of the morphisms in (\ref{eq:kq1}) and (\ref{eq:kq2}) is a surject
 Putting these facts together we may conclude that $\End_{\cM}(\oplus T_i) \simeq A$.
 That is, our homomorphism $\bfk Q \rightarrow \End_{\cM}(\oplus T_i)$ factors through $A$ and that our fields give sections that satisfy the relations of the quiver.
 
-% \subsubsection{Stability}
-% This follows from the isomorphism $\End_{\cM}(\oplus T_i) \simeq A$ discussed above.
-
-% \subsubsection{The relation $i \rightarrow 4 \rightarrow i$}
-% We do this for $i=0$ the others are similar.
-% This follows since $$T_0 \xrightarrow{u} T_4 \xrightarrow{\text{id}\otimes u} T_4 \otimes T_4$$ factors through $S^2(T_4) \rightarrow T_4 \otimes T_4$.
-
-% \subsubsection{The relation about the vertex 4}
-% This is seemingly non-trivial, we need a lemma.
-% We let $\bfx_i \colon T_0 \rightarrow T_4$ be the section corresponding to the path $0 \rightarrow 4 \rightarrow i \rightarrow 4$ for $i \neq 0$ and $\bfx_0:= \bfx$.
-
-% \begin{lemma}
-% For a family of $\theta$-stable representations of $\cM^\theta$ the following morphism is surjective
-% $$T_0^{\oplus 4} \xrightarrow{(\bfx_0 \,\, \bfx_1 \,\, \bfx_2\,\, \bfx_3)} T_4.$$
-% \end{lemma}
-
-% \begin{proof}{\red [Rough argument]}
-% We need to show that every morphism to $T_4$ factors through these.
-% Now the first lemma gives us that we only need to look at the quiver to see all the paths from $T_0$ to $T_4$ and indeed these are the building blocks.
-% \end{proof}
-
-% Then we show that $P$ applied to these are the $\bfy$s
-
-\subsection{The composite $g \circ f \colon \cN^\theta \rightarrow \cM \rightarrow \cN$ is the open inclusion}
+\section{The composite $g \circ f \colon \cN^\theta \rightarrow \cM \rightarrow \cN$ is the open inclusion $\cN^\theta \subset \cN$}
 
 It suffices to check this on the sections corresponding to each arrow.
 
@@ -225,7 +203,7 @@ We then have the following commutative diagram:
 Note that the field $P$ in the image is defined using the bottom half of the diagram.
 The diagram combined with the fact that $P \colon \Hom(P_0, P_4) \rightarrow \Hom(P_4, P_1)$ takes $0 \rightarrow 4$ to $4 \rightarrow 1$ gives us that the section corresponding to $i \rightarrow 4$ gets mapped to itself under $g \circ f$.
 
-\subsubsection{The arrows $i \rightarrow 4$}
+\subsection{The arrows $i \rightarrow 4$}
 
 For $i =1$, we may naturally rewrite the section corresponding the arrow $4 \rightarrow 1$ as a morphism $T_1^\vee \otimes L_4 \rightarrow T_4$ and fits into the short exact sequence in the diagram below:
 \begin{equation}
@@ -236,105 +214,115 @@ Now since the field $\alpha$ in the image is given by the non-trivial vertical a
 The cases $i=2,3$ are similar.
 The case $i=0$ follows from the relations of the quiver.
 
-\section{Earlier correspondence}
+\section{Stability and conclusion}
 
-We begin by introducing the GIT problem without much context just in case you came across something similar before.
-We then hand-wave a little to explain the motivation behind this.
+We begin with the morphism $f$.
+The $\theta$-stability of a family of points of $\cN$ gives non-vanishing sections of the bundles $T_1, \ldots, T_3$ and a surjective morphism $T_0^{\oplus 2} \rightarrow T_4$.
+These give rise to analogous sections and morphisms on $\cM$; they remain non-zero and surjective on $\cM$, since the composite $g \circ f$ is an open inclusion, and therefore give rise to non-vanishing $\theta$-semi-invariant on $\cM$.
 
-The orbifold corresponding to the Dynkin diagram $D_4$ is given by the group 
-\[
-\mathbb{B}D_4:= \left\langle \sigma=\left(\begin{array}{cc} i & 0 \\ 0 & -i \end{array} \right), \tau=\left( \begin{array}{cc} 0 & 1 \\ -1 & 0 \end{array} \right) \right\rangle
-\]
-acting on $\mathbb{C}^2$. 
-The moduli space of $\theta$-stable quiver representation on the McKay quiver for any generic stability parameter $\theta$ will be denoted $\cM^\theta$.
-We have that $\cM^\theta$ is isomorphic to the minimal resolution $Y$ of the corresponding singularity for any generic stability parameter $\theta$.
+We now have a pair of birational morphisms $f \colon \cN^\theta \rightarrow \cM^\theta$ and $g \colon \cM^\theta \rightarrow \cN^\theta$ for which $g \circ f$ is the identity hence they are isomorphisms.
 
-Take $T_1, \ldots, T_6$ to be vector spaces with dimension vector $(1,1,1,2,2,2)$.
-Also impose the following restriction on the choice of vector spaces above.
-In what follows $\text{det}$ is the top exterior power.
-\begin{align*}
-    \text{det}(T_5) &= T_1 \otimes T_2 \otimes T_3 \\
-    \text{det}(T_6) &= \text{det}(T_4) \otimes T_1 \otimes T_2 \otimes T_3.
-\end{align*}
 
-The vector spaces $T_1, \ldots, T_4$ should be thought of as the fibres of the universal bundle over $\cM^\theta$ for some fixed $\theta$ (we take $T_0$ to be the $\bfk$).
-In other words, the first chern classes of each these bundles are dual to the classes of the irreducible components in the exceptional locus of $Y$.
-The spaces $T_5$ and $T_6$ are the fibres of rank two universal bundle arising from different choices of quiver stability parameters, up to tensoring by a universal line bundle.
-Up to tensoring by a line bundle, $T_4$, $T_5$ and $T_6$ are the only rank two vector bundles on $Y$ arising as universal bundles on the $\cM^\theta$ for any generic quiver stability parameter.
-For general $D_n$ the number of such rank two bundles is $2^{n-1}-n-1$.
-
-For a reason that is not yet clear to me, the building blocks of the GIT problem that relate $Y$ to the stack $[\mathbb{C}^2/G]$ are the following fields:
-\begin{align*}
-&\bfk \longrightarrow T_4 \\
-A \colon &T_5 \otimes T_1 \longrightarrow T_6 \\
-B \colon &T_5 \otimes T_2 \longrightarrow T_6 \\
-C \colon &T_5 \otimes T_3 \longrightarrow T_6 \\
-M \colon &T_4 \otimes \text{det}(T_4) \longrightarrow T_6
-\end{align*}
-The morphisms $A$, $B$ and $C$ are required to satisfy the condition that $AB^{-1}$, $BC^{-1}$ and $CA^{-1}$ are traceless.
-In particular, this is not really `linear'.
-This condition of $A$, $B$, and $C$ comes from the mutual-commutativity of the corresponding elements $s_1$, $s_2$ and $s_3$ in the braid group.
-
-Our gauge group is $$G := \{(g_1, \ldots,g_6) \in (\times_i \text{GL}(T_i)) \, |\, \text{det}(g_5)= g_1 g_2 g_3 \, , \,\, \text{det}(g_6)= \text{det}(g_4)g_1 g_2 g_3 \}.$$
-
-We now show that we get the corresponding orbifold if we insist $A,B,C$ and $M$ are isomorphisms.
-We may act by the element $$(1, \det M, 1, M, (\det A^{-1}\cdot \det M)^{\frac{1}{2}} \cdot A, \det M \cdot \text{Id}) \in G$$ to fix $M=\text{Id}$ and $A= \mu_1 \cdot \text{Id}$ for some scalar $\mu_1$. Therefore, we may assume $M = \text{Id}$ and $A = \mu_1 \cdot \text{Id}$.
-The subgroup of $G$ fixing $M= \text{Id}$ and $A= \mu_1 \cdot \text{Id}$ is given by elements of the form $$(g_1, g_2, g_3, g_4, (g_1 g_2 g_3 \det g_4^{-1})^\frac{1}{2} \cdot g_4, (g_1g_2g_3)^\frac{1}{2} \cdot g_4) \in G$$
-
-The tracelessness of $BA^{-1}$ and $CA^{-1}$ then implies that both $B$ and $C$ are traceless. We may act on $B$ by change of basis while preserving the fact that $M$ is the identity and $A$ is a scalar matrix. We may therefore assume that $B$ is of the form 
-$$\begin{pmatrix}
-\mu_2 & 0 \\
-0 & - \mu_2
-\end{pmatrix}.$$
-Tracelness of $BC^{-1}$ then forces $C$ to be of the form 
-$$\begin{pmatrix}
-0 & \mu_3 \\
-\mu_3 & 0
-\end{pmatrix}.$$
-To fix $\mu_1 = \mu_2 = \mu_3 = 1$ we act by $$(\mu_1, \mu_2, \mu_3, \text{Id}, (\mu_1\mu_2\mu_3)^\frac{1}{2}\cdot \text{Id}, (\mu_1\mu_2\mu_3)^\frac{1}{2}\cdot \text{Id}) \in G.$$ 
-The result then follows from Tannakian duality.
-
-\begin{rmk}
-From this data we may construct a morphism $T_4 \otimes T_4 \rightarrow T_1$. First note that such a morphism is equivalent to a morphism $T_4 \rightarrow T_4^\vee \otimes T_1$. Invoking the natural isomorphism $T_4^\vee \cong T_4 \otimes \det(T_4)^\vee$, this is equivalent to a morphism $\det(T_4) \otimes T_4 \rightarrow T_4 \otimes T_1$.
-
-Further applications of the natural isomorphism $V^\vee \cong V \otimes \det(V)^\vee$, gives us morphisms:
-\begin{align*}
-A^{T} &\colon T_6 \otimes T_1 \longrightarrow T_5 \otimes \det(T_4) \\
-B^{T} &\colon T_6 \otimes T_2 \longrightarrow T_5 \otimes \det(T_4) \\
-C^{T} &\colon T_6 \otimes T_3 \longrightarrow T_5 \otimes \det(T_4) \\
-M^{T} &\colon T_6 \otimes \det(T_4) \longrightarrow T_4 \otimes T_1 \otimes T_2 \otimes T_3.
-\end{align*}
-
-Now the morphism $\det(T_4) \otimes T_4 \rightarrow T_4 \otimes T_1$ is given by the composite $MC^{T}BM$ (or equivalently $MB^{T}CM$): $$\det(T_4) \otimes T_4 \rightarrow T_6 \rightarrow T_5 \otimes \det(T_4) \otimes T_3^\vee \rightarrow T_6 \otimes \det(T_4) \otimes T_2^\vee \otimes T_3^\vee \rightarrow T_4 \otimes T_1.$$
-\end{rmk}
-
-\begin{rmk}
-Note that one may reconstruct a representation of the McKay quiver equipped with this data along with a morphism $T_0 \rightarrow T_4$. Take, for example the arrow $T_4 \rightarrow T_1$, this is given by the composite $$T_4 \rightarrow T_4 \otimes T_4 \rightarrow T_1.$$
-\end{rmk}
-
-\begin{rmk}
-Tracelessness of $AB^{-1}$ (and the like) follows from the need for  the equality $AB^{T}= \lambda BA^{T}$ for some scalar $\lambda$. That is, the morphisms $AB^{T}$ and $BA^{T}$ differ by tensoring by a line bundle. This comes from the braid relations.
-\end{rmk}
-
-\subsection*{Where does this come from?}
-
-Any GLSM that recovers the orbifold should contain enough data to recover the stabiliser group at the origin. 
-Tannakian philosophy implies that one should try to capture the monoidal data of the category of representations to achieve this result.
-
-Our group $\bB D_4$ has four non-trivial irreducible representations: three of dimension 1 and a two dimensional one. We abuse notation by using the same letters $T_i$ to denote both the irreducile representations of $\bB D_4$ and the universal bundels on the corresponding McKay quiver.
-We have that the monoidal structure is given by the following isomorphisms:
-\begin{align*}
-\text{ for } i \in \{1,2,3\} \quad T_i \otimes T_i &\rightarrow \det T_4 \\
-\text{ for } \{i,j,k\} = \{1,2,3\} \quad T_i \otimes T_j &\rightarrow T_k\\
-\det T_4  &\rightarrow T_0 \\
-\text{S}^2(T_4) &\rightarrow T_1 \oplus T_2 \oplus T_3.
-\end{align*}
-
-We fix a generic stability parameter $\theta$ and $T_1, \ldots T_4$ be the universal bundles on $\cM^\theta$.
-We look for generic stability parameter $\theta'$ for which the universal bundles are given by $(T_1 \otimes T_i), \ldots, (T_4 \otimes T_i)$ for $i = 1,2,3$ or $(T_1 \otimes \det T_4), \ldots, (T_4 \otimes \det T_4)$.
-We then compute the element in the braid group taking the chamber containing $\theta$ to that containing $\theta'$.
-This gives us a series of spherical twists each of which changes exactly one universal bundle.
-The spherical twists also give us a morphism between the bundles across the corresponding hyperplanes.
-The morphisms $A$, $B$, $C$ and $D$ above are such morphisms.
-They correspond to the spherical twists corresponding to the simples at $1$, $2$, $3$ and $4$ respectively.
+%
+%\section{Earlier correspondence}
+%
+%We begin by introducing the GIT problem without much context just in case you came across something similar before.
+%We then hand-wave a little to explain the motivation behind this.
+%
+%The orbifold corresponding to the Dynkin diagram $D_4$ is given by the group 
+%\[
+%\mathbb{B}D_4:= \left\langle \sigma=\left(\begin{array}{cc} i & 0 \\ 0 & -i \end{array} \right), \tau=\left( \begin{array}{cc} 0 & 1 \\ -1 & 0 \end{array} \right) \right\rangle
+%\]
+%acting on $\mathbb{C}^2$. 
+%The moduli space of $\theta$-stable quiver representation on the McKay quiver for any generic stability parameter $\theta$ will be denoted $\cM^\theta$.
+%We have that $\cM^\theta$ is isomorphic to the minimal resolution $Y$ of the corresponding singularity for any generic stability parameter $\theta$.
+%
+%Take $T_1, \ldots, T_6$ to be vector spaces with dimension vector $(1,1,1,2,2,2)$.
+%Also impose the following restriction on the choice of vector spaces above.
+%In what follows $\text{det}$ is the top exterior power.
+%\begin{align*}
+%    \text{det}(T_5) &= T_1 \otimes T_2 \otimes T_3 \\
+%    \text{det}(T_6) &= \text{det}(T_4) \otimes T_1 \otimes T_2 \otimes T_3.
+%\end{align*}
+%
+%The vector spaces $T_1, \ldots, T_4$ should be thought of as the fibres of the universal bundle over $\cM^\theta$ for some fixed $\theta$ (we take $T_0$ to be the $\bfk$).
+%In other words, the first chern classes of each these bundles are dual to the classes of the irreducible components in the exceptional locus of $Y$.
+%The spaces $T_5$ and $T_6$ are the fibres of rank two universal bundle arising from different choices of quiver stability parameters, up to tensoring by a universal line bundle.
+%Up to tensoring by a line bundle, $T_4$, $T_5$ and $T_6$ are the only rank two vector bundles on $Y$ arising as universal bundles on the $\cM^\theta$ for any generic quiver stability parameter.
+%For general $D_n$ the number of such rank two bundles is $2^{n-1}-n-1$.
+%
+%For a reason that is not yet clear to me, the building blocks of the GIT problem that relate $Y$ to the stack $[\mathbb{C}^2/G]$ are the following fields:
+%\begin{align*}
+%&\bfk \longrightarrow T_4 \\
+%A \colon &T_5 \otimes T_1 \longrightarrow T_6 \\
+%B \colon &T_5 \otimes T_2 \longrightarrow T_6 \\
+%C \colon &T_5 \otimes T_3 \longrightarrow T_6 \\
+%M \colon &T_4 \otimes \text{det}(T_4) \longrightarrow T_6
+%\end{align*}
+%The morphisms $A$, $B$ and $C$ are required to satisfy the condition that $AB^{-1}$, $BC^{-1}$ and $CA^{-1}$ are traceless.
+%In particular, this is not really `linear'.
+%This condition of $A$, $B$, and $C$ comes from the mutual-commutativity of the corresponding elements $s_1$, $s_2$ and $s_3$ in the braid group.
+%
+%Our gauge group is $$G := \{(g_1, \ldots,g_6) \in (\times_i \text{GL}(T_i)) \, |\, \text{det}(g_5)= g_1 g_2 g_3 \, , \,\, \text{det}(g_6)= \text{det}(g_4)g_1 g_2 g_3 \}.$$
+%
+%We now show that we get the corresponding orbifold if we insist $A,B,C$ and $M$ are isomorphisms.
+%We may act by the element $$(1, \det M, 1, M, (\det A^{-1}\cdot \det M)^{\frac{1}{2}} \cdot A, \det M \cdot \text{Id}) \in G$$ to fix $M=\text{Id}$ and $A= \mu_1 \cdot \text{Id}$ for some scalar $\mu_1$. Therefore, we may assume $M = \text{Id}$ and $A = \mu_1 \cdot \text{Id}$.
+%The subgroup of $G$ fixing $M= \text{Id}$ and $A= \mu_1 \cdot \text{Id}$ is given by elements of the form $$(g_1, g_2, g_3, g_4, (g_1 g_2 g_3 \det g_4^{-1})^\frac{1}{2} \cdot g_4, (g_1g_2g_3)^\frac{1}{2} \cdot g_4) \in G$$
+%
+%The tracelessness of $BA^{-1}$ and $CA^{-1}$ then implies that both $B$ and $C$ are traceless. We may act on $B$ by change of basis while preserving the fact that $M$ is the identity and $A$ is a scalar matrix. We may therefore assume that $B$ is of the form 
+%$$\begin{pmatrix}
+%\mu_2 & 0 \\
+%0 & - \mu_2
+%\end{pmatrix}.$$
+%Tracelness of $BC^{-1}$ then forces $C$ to be of the form 
+%$$\begin{pmatrix}
+%0 & \mu_3 \\
+%\mu_3 & 0
+%\end{pmatrix}.$$
+%To fix $\mu_1 = \mu_2 = \mu_3 = 1$ we act by $$(\mu_1, \mu_2, \mu_3, \text{Id}, (\mu_1\mu_2\mu_3)^\frac{1}{2}\cdot \text{Id}, (\mu_1\mu_2\mu_3)^\frac{1}{2}\cdot \text{Id}) \in G.$$ 
+%The result then follows from Tannakian duality.
+%
+%\begin{rmk}
+%From this data we may construct a morphism $T_4 \otimes T_4 \rightarrow T_1$. First note that such a morphism is equivalent to a morphism $T_4 \rightarrow T_4^\vee \otimes T_1$. Invoking the natural isomorphism $T_4^\vee \cong T_4 \otimes \det(T_4)^\vee$, this is equivalent to a morphism $\det(T_4) \otimes T_4 \rightarrow T_4 \otimes T_1$.
+%
+%Further applications of the natural isomorphism $V^\vee \cong V \otimes \det(V)^\vee$, gives us morphisms:
+%\begin{align*}
+%A^{T} &\colon T_6 \otimes T_1 \longrightarrow T_5 \otimes \det(T_4) \\
+%B^{T} &\colon T_6 \otimes T_2 \longrightarrow T_5 \otimes \det(T_4) \\
+%C^{T} &\colon T_6 \otimes T_3 \longrightarrow T_5 \otimes \det(T_4) \\
+%M^{T} &\colon T_6 \otimes \det(T_4) \longrightarrow T_4 \otimes T_1 \otimes T_2 \otimes T_3.
+%\end{align*}
+%
+%Now the morphism $\det(T_4) \otimes T_4 \rightarrow T_4 \otimes T_1$ is given by the composite $MC^{T}BM$ (or equivalently $MB^{T}CM$): $$\det(T_4) \otimes T_4 \rightarrow T_6 \rightarrow T_5 \otimes \det(T_4) \otimes T_3^\vee \rightarrow T_6 \otimes \det(T_4) \otimes T_2^\vee \otimes T_3^\vee \rightarrow T_4 \otimes T_1.$$
+%\end{rmk}
+%
+%\begin{rmk}
+%Note that one may reconstruct a representation of the McKay quiver equipped with this data along with a morphism $T_0 \rightarrow T_4$. Take, for example the arrow $T_4 \rightarrow T_1$, this is given by the composite $$T_4 \rightarrow T_4 \otimes T_4 \rightarrow T_1.$$
+%\end{rmk}
+%
+%\begin{rmk}
+%Tracelessness of $AB^{-1}$ (and the like) follows from the need for  the equality $AB^{T}= \lambda BA^{T}$ for some scalar $\lambda$. That is, the morphisms $AB^{T}$ and $BA^{T}$ differ by tensoring by a line bundle. This comes from the braid relations.
+%\end{rmk}
+%
+%\subsection*{Where does this come from?}
+%
+%Any GLSM that recovers the orbifold should contain enough data to recover the stabiliser group at the origin. 
+%Tannakian philosophy implies that one should try to capture the monoidal data of the category of representations to achieve this result.
+%
+%Our group $\bB D_4$ has four non-trivial irreducible representations: three of dimension 1 and a two dimensional one. We abuse notation by using the same letters $T_i$ to denote both the irreducile representations of $\bB D_4$ and the universal bundels on the corresponding McKay quiver.
+%We have that the monoidal structure is given by the following isomorphisms:
+%\begin{align*}
+%\text{ for } i \in \{1,2,3\} \quad T_i \otimes T_i &\rightarrow \det T_4 \\
+%\text{ for } \{i,j,k\} = \{1,2,3\} \quad T_i \otimes T_j &\rightarrow T_k\\
+%\det T_4  &\rightarrow T_0 \\
+%\text{S}^2(T_4) &\rightarrow T_1 \oplus T_2 \oplus T_3.
+%\end{align*}
+%
+%We fix a generic stability parameter $\theta$ and $T_1, \ldots T_4$ be the universal bundles on $\cM^\theta$.
+%We look for generic stability parameter $\theta'$ for which the universal bundles are given by $(T_1 \otimes T_i), \ldots, (T_4 \otimes T_i)$ for $i = 1,2,3$ or $(T_1 \otimes \det T_4), \ldots, (T_4 \otimes \det T_4)$.
+%We then compute the element in the braid group taking the chamber containing $\theta$ to that containing $\theta'$.
+%This gives us a series of spherical twists each of which changes exactly one universal bundle.
+%The spherical twists also give us a morphism between the bundles across the corresponding hyperplanes.
+%The morphisms $A$, $B$, $C$ and $D$ above are such morphisms.
+%They correspond to the spherical twists corresponding to the simples at $1$, $2$, $3$ and $4$ respectively.
 \end{document}
